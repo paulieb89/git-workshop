@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Temp / runtime outputs
+/tmp/
+*.log
+
+# Task-observer workspace (local only)
+skill-observations/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+
+# Environment
+.env
+.env.*
