@@ -40,13 +40,27 @@ It's simple enough to understand in 5 minutes. Complex enough that you'll want b
 git clone https://github.com/YOUR_USERNAME/tally.git
 cd tally
 
-# 3. Install
+# 3. Create and activate a virtual environment
+
+# Mac / Linux
+python -m venv .venv
+source .venv/bin/activate
+
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# 4. Install
 pip install -e ".[dev]"
 
-# 4. Check it works
+# 5. Check it works
+tally add tasks
 tally show
 pytest
 ```
+
+> Keep the venv active whenever you use `tally`. You'll see `(.venv)` in your prompt when it is.
+> New terminal? Run the `activate` command again before starting.
 
 Start with Lesson 1.
 
